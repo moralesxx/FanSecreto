@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan secreto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div class="sparkles"></div>
+
+    <header>
+        <h1>Canchita Chocolatita</h1>
+        <p>Para la futura odontóloga más hermosa del mundo</p>
+    </header>
+
+    <!-- Contenedor del Carrusel -->
+    <div class="carousel-container">
+        <button class="btn-nav btn-prev" id="prevBtn">&#10094;</button>
+        
+        <div class="carousel-track-container">
+            <div class="carousel-track" id="track">
+                
+                <!-- Tarjeta 1 (Odontología) -> Foto 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-image-container">
+                        <img src="./img/2.jpeg" alt="Dayana" class="slide-img">
+                    </div>
+                    <div class="slide-text">Mi 11:11, tú eres el único motivo de mis desveladas ;)</div>
+                    <div class="slide-footer">01</div>
+                </div>
+
+                <!-- Tarjeta 2 (Música) -> Foto 3 -->
+                <div class="carousel-slide">
+                    <div class="slide-image-container">
+                        <img src="./img/3.jpeg" alt="Dayana" class="slide-img">
+                    </div>
+                    <div class="slide-text">La hiker más hermosa, algún día haremos cumbre juntos.</div>
+                    <div class="slide-footer">02</div>
+                </div>
+
+                <!-- Tarjeta 3 (Cocina) -> Foto 4 -->
+                <div class="carousel-slide">
+                    <div class="slide-image-container">
+                        <img src="./img/4.jpeg" alt="Dayana" class="slide-img">
+                    </div>
+                    <div class="slide-text">Dije que jamás sería infiel, pero si tu apareces, todo cambia.</div>
+                    <div class="slide-footer">03</div>
+                </div>
+
+                <!-- Tarjeta 4 (Pláticas) -> Foto 5 -->
+                <div class="carousel-slide">
+                    <div class="slide-image-container">
+                        <img src="./img/5.jpeg" alt="Dayana" class="slide-img">
+                    </div>
+                    <div class="slide-text">Te re odio, eres una hermosa, preciosa y divina. </div>
+                    <div class="slide-footer">04</div>
+                </div>
+
+                <!-- Tarjeta 5 (Cierre Especial) -> Foto 1 -->
+                <div class="carousel-slide">
+                    <div class="slide-image-container">
+                        <img src="./img/1.jpeg" alt="Dayana" class="slide-img">
+                    </div>
+                    <div class="slide-text">Tú eres mi drogra letal...</div>
+                    <div class="slide-footer">05</div>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="btn-nav btn-next" id="nextBtn">&#10095;</button>
+    </div>
+
+    <!-- Indicadores (Puntitos abajo) -->
+    <div class="carousel-nav" id="carouselNav">
+        <button class="carousel-indicator active"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
