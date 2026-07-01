@@ -19,7 +19,7 @@ body {
     position: relative;
 }
 
-/* Capa de fondo con el estampado (patrón repetitivo) de odontología */
+/* Capa de fondo con el estampado de odontología - INTENSIDAD REFORZADA */
 .sparkles {
     position: absolute;
     width: 100%;
@@ -28,10 +28,10 @@ body {
     left: 0;
     pointer-events: none;
     z-index: 1;
-    opacity: 0.12; /* Ajusta este valor si quieres que el estampado se note más o menos */
+    opacity: 0.28; /* Subido de 0.12 a 0.28 para que el estampado sea mucho más visible */
     
-    /* Patrón de estampado repetitivo usando SVG en línea con un diente/molar minimalista y un destello médico */
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><g fill='none' stroke='%23fbc5cd' stroke-width='1'><path d='M10,15 C10,9 16,8 20,11 C24,8 30,9 30,15 C30,22 26,27 24,31 C23,33 22,33 21,29 C20,26 20,26 19,29 C18,33 17,33 16,31 C14,27 10,22 10,15 Z'/><path d='M45,40 L47,43 L50,44 L47,45 L45,48 L43,45 L40,44 L43,43 Z' fill='%23bd2c42' stroke='none'/></g></svg>");
+    /* Patrón de estampado repetitivo con trazos un poco más definidos y claros */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><g fill='none' stroke='%23fdb1bc' stroke-width='1.2'><path d='M10,15 C10,9 16,8 20,11 C24,8 30,9 30,15 C30,22 26,27 24,31 C23,33 22,33 21,29 C20,26 20,26 19,29 C18,33 17,33 16,31 C14,27 10,22 10,15 Z'/><path d='M45,40 L47,43 L50,44 L47,45 L45,48 L43,45 L40,44 L43,43 Z' fill='%23d62839' stroke='none'/></g></svg>");
     
     /* Esto hace que el diseño se repita infinitamente por toda la pantalla como un tapiz o estampado */
     background-repeat: repeat;
@@ -71,12 +71,20 @@ header p {
     overflow: hidden;
     position: relative;
     border-radius: 24px;
-    /* Sombras acentuadas para resaltar el contenedor sobre el estampado */
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8), 
-                0 0 35px rgba(189, 44, 66, 0.2);
-    background: rgba(26, 8, 10, 0.75); /* Fondo oscuro translúcido para leer perfectamente */
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    
+    /* Sombra reforzada: Combinación de una sombra oscura profunda y un resplandor vino más vivo */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), 
+                0 0 40px rgba(189, 44, 66, 0.45);
+                
+    /* Fondo un poco más opaco (0.9) para bloquear por completo el patrón de fondo detrás del texto */
+    background: rgba(20, 6, 8, 0.9); 
+    
+    /* Desenfoque de fondo ultra denso */
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    
+    /* Borde sutil pero más iluminado para definir el contorno */
+    border: 1px solid rgba(253, 177, 188, 0.2);
 }
 
 .carousel-track {
@@ -133,6 +141,10 @@ header p {
     color: #f5e6e8;
     font-weight: 500;
     padding: 20px 10px;
+}
+
+.slide-text span {
+    color: #fbc5cd;
 }
 
 .slide-footer {
